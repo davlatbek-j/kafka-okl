@@ -15,7 +15,7 @@ public class Runner implements CommandLineRunner
     @Override
     public void run(String... args) throws Exception
     {
-        for (int i = 0; i < 10_000_000; i++)
+        for (int i = 0; i < 100; i++)
         {
             kafkaTemplate.send("ok", "I love you Zakkunai " + i);
         }
